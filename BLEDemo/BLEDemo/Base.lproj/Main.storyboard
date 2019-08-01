@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Build Choice View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="BuildChoiceViewController" id="BYZ-38-t0r" customClass="BuildChoiceViewController" customModule="BLEDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select any of the below options to start" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GJl-Us-GoH">
+                                <rect key="frame" x="20" y="120" width="335" height="53"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LOS-mH-q32">
+                                <rect key="frame" x="137.5" y="243" width="100" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="c5S-mz-uyg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="20"/>
+                                <state key="normal" title="Sender"/>
+                            </button>
+                            <button opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="up5-sv-yw1">
+                                <rect key="frame" x="137.5" y="351" width="100" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="Heu-Kw-wyh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="20"/>
+                                <state key="normal" title="Receiver"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.60798440046492064" green="0.92549019610000005" blue="0.50941506989762753" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GJl-Us-GoH" secondAttribute="trailing" constant="20" id="41G-Vr-IKr"/>
+                            <constraint firstItem="up5-sv-yw1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6jA-cU-HkU"/>
+                            <constraint firstItem="LOS-mH-q32" firstAttribute="top" secondItem="GJl-Us-GoH" secondAttribute="bottom" constant="70" id="MPS-cN-8V6"/>
+                            <constraint firstItem="GJl-Us-GoH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Ntx-n9-ghA"/>
+                            <constraint firstItem="GJl-Us-GoH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="Qee-hu-izR"/>
+                            <constraint firstItem="LOS-mH-q32" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="T9p-4b-rCZ"/>
+                            <constraint firstItem="up5-sv-yw1" firstAttribute="top" secondItem="LOS-mH-q32" secondAttribute="bottom" constant="70" id="gr2-OI-WGg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="receiverButton" destination="up5-sv-yw1" id="txa-En-RQ5"/>
+                        <outlet property="senderButton" destination="LOS-mH-q32" id="cv5-71-TQP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-49" y="-153"/>
+        </scene>
+        <!--Register View Controller-->
+        <scene sceneID="olc-xK-u3W">
+            <objects>
+                <viewController storyboardIdentifier="RegisterViewController" id="IrI-Q3-66J" customClass="RegisterViewController" customModule="BLEDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TZL-hw-OcC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="vgE-km-OSg">
+                                <rect key="frame" x="127.5" y="80" width="120" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="Isg-0e-EYf"/>
+                                    <constraint firstAttribute="width" constant="120" id="z5R-12-cbS"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type your device name over here..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wFa-qd-AE4">
+                                <rect key="frame" x="20" y="290" width="335" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="IrI-Q3-66J" id="v7U-q3-5Ky"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sAm-eJ-Gv4">
+                                <rect key="frame" x="40" y="557" width="295" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Oxs-cc-ov7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="Register">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="registerButtonClicked:" destination="IrI-Q3-66J" eventType="touchUpInside" id="ntY-Bi-gb7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="752" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="brY-E2-5o5">
+                                <rect key="frame" x="120" y="360" width="135" height="40"/>
+                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="kbP-Gn-jnh"/>
+                                    <constraint firstAttribute="height" constant="40" id="rWf-md-12C"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="21"/>
+                                <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="9" maxY="0.0"/>
+                                <state key="normal" title="Select Color">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="colorSelectionButtonClicked:" destination="IrI-Q3-66J" eventType="touchUpInside" id="KUS-Oz-J2L"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92549019610000005" green="0.92549019610000005" blue="0.92549019610000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="xOv-XD-5cn" firstAttribute="bottom" secondItem="sAm-eJ-Gv4" secondAttribute="bottom" constant="60" id="9Bf-Az-jhS"/>
+                            <constraint firstItem="brY-E2-5o5" firstAttribute="centerX" secondItem="TZL-hw-OcC" secondAttribute="centerX" id="JkF-HU-ssA"/>
+                            <constraint firstItem="vgE-km-OSg" firstAttribute="centerX" secondItem="TZL-hw-OcC" secondAttribute="centerX" id="MrO-kN-UIS"/>
+                            <constraint firstItem="wFa-qd-AE4" firstAttribute="leading" secondItem="xOv-XD-5cn" secondAttribute="leading" constant="20" id="RwI-Pd-Bff"/>
+                            <constraint firstItem="sAm-eJ-Gv4" firstAttribute="leading" secondItem="xOv-XD-5cn" secondAttribute="leading" constant="40" id="Sed-Sh-SJJ"/>
+                            <constraint firstItem="brY-E2-5o5" firstAttribute="top" secondItem="wFa-qd-AE4" secondAttribute="bottom" constant="40" id="aKE-vq-tqB"/>
+                            <constraint firstItem="vgE-km-OSg" firstAttribute="top" secondItem="xOv-XD-5cn" secondAttribute="top" constant="60" id="b9h-Nm-Jvt"/>
+                            <constraint firstItem="xOv-XD-5cn" firstAttribute="trailing" secondItem="wFa-qd-AE4" secondAttribute="trailing" constant="20" id="lgO-CW-YI4"/>
+                            <constraint firstItem="wFa-qd-AE4" firstAttribute="top" secondItem="vgE-km-OSg" secondAttribute="bottom" constant="90" id="swz-n2-5Wl"/>
+                            <constraint firstItem="xOv-XD-5cn" firstAttribute="trailing" secondItem="sAm-eJ-Gv4" secondAttribute="trailing" constant="40" id="tSf-KZ-bNN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="xOv-XD-5cn"/>
+                    </view>
+                    <connections>
+                        <outlet property="colorSelectionButton" destination="brY-E2-5o5" id="h3J-cg-1Jg"/>
+                        <outlet property="deviceNameTextField" destination="wFa-qd-AE4" id="V5z-zh-eo2"/>
+                        <outlet property="placeholderImageView" destination="vgE-km-OSg" id="bqk-2A-wlB"/>
+                        <outlet property="registerButton" destination="sAm-eJ-Gv4" id="2Mw-XF-pis"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZEH-tE-TpQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1460" y="51"/>
+        </scene>
+        <!--Color Picker Controller-->
+        <scene sceneID="Y9Z-XF-JOB">
+            <objects>
+                <collectionViewController storyboardIdentifier="ColorPickerController" id="zhu-vT-TTu" customClass="ColorPickerController" customModule="BLEDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="CsY-yn-WAu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="2sa-AG-tUf">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="colorPickerCellID" id="eTD-Y0-LsT">
+                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </view>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="zhu-vT-TTu" id="F69-ef-pt7"/>
+                            <outlet property="delegate" destination="zhu-vT-TTu" id="10c-1Q-KJE"/>
+                        </connections>
+                    </collectionView>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Chy-3n-v8o" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2268" y="51"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="avatar_placeholder" width="128" height="128"/>
+    </resources>
+</document>
